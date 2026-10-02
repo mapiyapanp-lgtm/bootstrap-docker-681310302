@@ -1,0 +1,24 @@
+// Google Fonts Kanit
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap');
+
+// --- 1. Bootstrap 5 Variable Overrides ---
+// Primary: Rich Purple, Secondary/Accent: Vibrant Yellow
+$primary: #6c2bd9;
+$primary-rgb: 108, 43, 217;
+$secondary: #facc15;
+$secondary-rgb: 250, 204, 21;
+$warning: #eab308;
+$info: #8b5cf6;
+$dark: #1e1135;
+
+$font-family-sans-serif: 'Kanit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 600;
+
+$border-radius: 0.75rem;
+$border-radius-lg: 1.25rem;
+$border-radius-sm: 0.5rem;
+
+// นำเข้า Bootstrap SCSS ทั้งหมด
+@import "bootstrap/scss/bootstrap";

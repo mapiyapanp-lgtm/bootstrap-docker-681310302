@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Latest (Purple & Yellow) + Docker</title>
+
+    <!-- Google Fonts: Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Accent Bar -->
+    <div class="purple-yellow-accent-bar"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container py-2">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold fs-4" href="#">
+                <span class="d-inline-flex justify-content-center align-items-center rounded-3 bg-purple-gradient text-white p-2" style="width: 38px; height: 38px;">
+                    ⚡
+                </span>
+                <span class="text-gradient-purple-yellow">Bootstrap App</span>
+            </a>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge brand-badge px-3 py-2 rounded-pill">
+                    💜 ม่วง-เหลือง 💛
+                </span>
+                <span class="badge yellow-pill px-3 py-2 rounded-pill d-none d-sm-inline-block">
+                    ฟอนต์ Kanit
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container py-5">
+        <!-- Hero Section -->
+        <div class="p-4 p-md-5 mb-5 rounded-4 hero-card shadow-sm text-center">
+            <div class="mb-3">
+                <span class="badge brand-badge px-3 py-2 rounded-pill fs-6">
+                    ✨ อัปเดตธีมสีม่วง-เหลือง & ฟอนต์ Kanit สำเร็จ
+                </span>
+            </div>
+            <h1 class="display-4 fw-bold text-gradient-purple-yellow mb-3">
+                Bootstrap Latest on Docker
+            </h1>
+            <p class="fs-5 text-secondary col-lg-8 mx-auto mb-4">
+                รันผ่าน Node.js + Vite บน Docker Container สมบูรณ์แบบ พร้อมปรับแต่งฟอนต์ <span class="fw-semibold text-primary">Kanit (คณิต)</span> และธีมสี <span class="fw-semibold" style="color: #6c2bd9;">ม่วง</span> - <span class="fw-semibold" style="color: #b45309;">เหลือง</span> อย่างลงตัว
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg px-4 py-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    🟣 ทดสอบ Modal
+                </button>
+                <button id="liveToastBtn" class="btn btn-secondary btn-lg px-4 py-2" type="button">
+                    🟡 แจ้งเตือน Toast
+                </button>
+            </div>
+        </div>
+
+        <!-- Component Showcase Section -->
+        <div class="row g-4 mb-5">
+            <!-- Purple Accent Card -->
+            <div class="col-md-4">
+                <div class="card card-theme h-100 p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge purple-pill px-3 py-2 rounded-pill">Primary Color</span>
+                        <div class="rounded-circle p-2" style="background: rgba(108, 43, 217, 0.1);">🟣</div>
+                    </div>
+                    <h3 class="h4 fw-bold text-primary mb-2">สีม่วง (Purple)</h3>
+                    <p class="text-secondary small mb-3">
+                        ให้ความรู้สึกทันสมัย พรีเมียม และมีเอกลักษณ์เฉพาะตัว ใช้เป็นสีหลักของปุ่มและหัวข้อ
+                    </p>
+                    <div class="progress mb-3" style="height: 10px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="btn btn-primary w-100 py-2">
+                        ปุ่มตัวอย่างสีม่วง
+                    </button>
+                </div>
+            </div>
+
+            <!-- Yellow Accent Card -->
+            <div class="col-md-4">
+                <div class="card card-theme h-100 p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge yellow-pill px-3 py-2 rounded-pill">Secondary Color</span>
+                        <div class="rounded-circle p-2" style="background: rgba(250, 204, 21, 0.2);">🟡</div>
+                    </div>
+                    <h3 class="h4 fw-bold text-warning mb-2" style="color: #b45309 !important;">สีเหลือง (Yellow)</h3>
+                    <p class="text-secondary small mb-3">
+                        เพิ่มความสดใส มีชีวิตชีวา และจุดเด่นในการเน้นข้อความสำคัญหรือการกระทำเสริม
+                    </p>
+                    <div class="progress mb-3" style="height: 10px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button class="btn btn-secondary w-100 py-2">
+                        ปุ่มตัวอย่างสีเหลือง
+                    </button>
+                </div>
+            </div>
+
+            <!-- Font & Typography Card -->
+            <div class="col-md-4">
+                <div class="card card-theme h-100 p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <span class="badge brand-badge px-3 py-2 rounded-pill">Google Fonts</span>
+                        <div class="rounded-circle p-2" style="background: rgba(108, 43, 217, 0.1);">🔤</div>
+                    </div>
+                    <h3 class="h4 fw-bold mb-2">ฟอนต์ Kanit (คณิต)</h3>
+                    <p class="text-secondary small mb-3">
+                        ฟอนต์ภาษาไทยและภาษาอังกฤษแนวโมเดิร์น ไร้หัว อ่านง่าย และดูเป็นมืออาชีพ
+                    </p>
+                    <div class="p-3 rounded-3 mb-3" style="background: #f8fafc; border: 1px dashed rgba(108, 43, 217, 0.3);">
+                        <div class="fw-bold fs-6">กขค งจฉ AaBbCc 1234</div>
+                        <div class="small text-muted">ครอบคลุมน้ำหนัก 300, 400, 500, 600, 700</div>
+                    </div>
+                    <button class="btn btn-outline-purple w-100 py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        เปิด Modal ดูฟอนต์
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Alert -->
+        <div class="alert alert-light border border-2 border-primary-subtle rounded-4 p-4 shadow-sm mb-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="fs-2">💡</div>
+                <div>
+                    <h5 class="fw-bold mb-1">Docker Compose + Vite HMR</h5>
+                    <p class="mb-0 text-secondary">
+                        เมื่อคุณแก้ไขไฟล์ในเครื่อง Mac ระบบ Chokidar Polling ใน Container จะทำการ Hot Reload อัตโนมัติทันที
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Component -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content shadow-lg">
+                <div class="modal-header">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="p-2 rounded-3 bg-purple-gradient text-white">💜</span>
+                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">แจ้งเตือนระบบ (Modal)</h1>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <div class="mb-3">
+                        <span class="badge brand-badge px-3 py-2 rounded-pill">
+                            Kanit Font + Purple Yellow Theme
+                        </span>
+                    </div>
+                    <h4 class="fw-bold text-primary mb-2">ธีมและฟอนต์พร้อมใช้งานแล้ว!</h4>
+                    <p class="text-secondary mb-0">
+                        Bootstrap 5 JavaScript และ Sass Stylesheet ทำงานร่วมกับ Vite และ Docker ได้อย่างสมบูรณ์แบบ ทั้งระบบตัวอักษรและคู่สีม่วง-เหลือง
+                    </p>
+                </div>
+                <div class="modal-footer bg-light">
+                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">เรียบร้อย</button>
+                    <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">ตกลง</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Toast Component -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
+        <div id="liveToast" class="toast shadow-lg rounded-4 border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-purple-gradient text-white rounded-top-4">
+                <strong class="me-auto">⚡ ระบบแจ้งเตือน</strong>
+                <small class="text-white-50">เมื่อสักครู่</small>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-white rounded-bottom-4 py-3">
+                <div class="d-flex align-items-center gap-2">
+                    <span class="badge yellow-pill px-2 py-1">สำเร็จ</span>
+                    <span class="fw-medium">Bootstrap JS ตอบสนองปกติแล้ว!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-secondary small border-top bg-white">
+        <div class="container">
+            Bootstrap 5 & Vite • Docker Development Environment • Kanit Font
+        </div>
+    </footer>
+
+    <!-- Bootstrap & Vite Application Script -->
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
